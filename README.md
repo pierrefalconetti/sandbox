@@ -1,6 +1,23 @@
+# Little Sandbox project
+
+Bac à sable pour s'entrainer avec Git.
+
+## Contributors
+
+- Benjamin Dean
+- Pierre Falconetti
+
+# Use this project
+
+1. Clone this
+1. Eventually run "npm install" in terminal to be sure to get the dependencies
+1. Test and edit as wanted
+1. Explain
+1. Respect work from other contributors and be nice
+
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project (and the content of this chapter) was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
