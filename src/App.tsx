@@ -1,15 +1,18 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import MyNewComponent from './xtrem-header';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import MyNewComponent from 'xtrem-header';
 
-function App() {
+export interface AppProps {
+}
+
+function App(props: AppProps) {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <div>Hello World!</div>
 
         <Popup trigger={<button>Lorem Ipsum is here</button>} position="right center">

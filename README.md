@@ -60,7 +60,9 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 The project was turned into a Typescript project by following this page: https://create-react-app.dev/docs/adding-typescript/
 
-The tsconfig.json file was added by using the command `tsc --init`, and the "jsx" flag was also activated.
+The tsconfig.json file was added by using the command `tsc --init`, and the "jsx" flag was also activated (see https://devtut.github.io/typescript/tsconfig-json.html#create-typescript-project-with-tsconfig-json for more details).
+
+PS: in case of type declaration issues, see https://akashmittal.com/could-not-find-declaration-file-module/ for workarounds.
 
 ## Learn More
 
