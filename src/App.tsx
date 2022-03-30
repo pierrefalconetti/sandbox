@@ -5,10 +5,7 @@ import MyNewComponent from './xtrem-header';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
-export interface AppProps {
-}
-
-function App(props: AppProps) {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
