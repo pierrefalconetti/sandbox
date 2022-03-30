@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import MyNewComponent from 'xtrem-header';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <MyNewComponent />
     </div>
   );
 }
