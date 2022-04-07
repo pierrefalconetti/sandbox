@@ -26,9 +26,10 @@ function App() {
         >
           Learn React
         </a>
+        <MyNewComponent />
       </header>
 
-      <MyNewComponent />
+
 
     </div>
   );
