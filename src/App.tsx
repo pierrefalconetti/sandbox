@@ -4,6 +4,7 @@ import React from 'react';
 import MyNewComponent from './xtrem-header';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import MyCard from './Card';
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
         >
           Learn React
         </a>
+        <MyCard content="Benjamin" email="benjamin.dean@sage.com"/>
+        <MyCard content="Pierre"/>
+        <MyCard content="Nicolas"/>
+        <MyCard content="David"/>
         <MyNewComponent />
       </header>
 

@@ -1,0 +1,12 @@
+.card {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(256, 0, 0, .5);
+    color: black;
+    padding: 28px;
+    margin: 26px;
+    text-align: left;
+}
+.email {
+    font-size: 14px;
+    text-align: left;
+}
