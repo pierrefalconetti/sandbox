@@ -2,6 +2,7 @@ import React from 'react';
 import './Card.css';
 
 export interface CardProps {
+  children?: any;
   content: string;
   email?: string;
 }
@@ -23,6 +24,9 @@ function Card(props: CardProps) {
           <></>
         )
       }
+      <div className="card-content">
+        {props.children}
+      </div>
     </div>
   )
 }

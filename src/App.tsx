@@ -16,7 +16,6 @@ function App() {
         <Popup trigger={<button>Lorem Ipsum is here</button>} position="right center">
           <div>Popup content here!!</div>
         </Popup>
-        <MyNewComponent />
       </header>
 
       <div className="App-content">
@@ -26,6 +25,11 @@ function App() {
         <MyCard content="David"/>
         <MyCard content="Christophe" />
         <MyCard content="Bence" />
+
+        <MyCard content="Tartempion">
+          <p>Ici, je peux mettre tout le contenu de type "any".</p>
+          <MyNewComponent />
+        </MyCard>
       </div>
 
       <footer>
