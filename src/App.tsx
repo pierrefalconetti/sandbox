@@ -3,8 +3,8 @@ import './App.css';
 import React from 'react';
 import MyNewComponent from './xtrem-header';
 import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 import MyCard from './Card';
+import 'reactjs-popup/dist/index.css';
 
 function App() {
   return (
@@ -13,6 +13,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <div>Hello World!</div>
+        <MyCard content="Benjamin" email="benjamin.dean@sage.com" />
+        <MyCard content="Pierre" email="pierre.falconetti@sage.com" />
         <Popup trigger={<button>Lorem Ipsum is here</button>} position="right center">
           <div>Popup content here!!</div>
         </Popup>
@@ -32,9 +34,9 @@ function App() {
         <MyCard content="Nicolas"/>
         <MyCard content="David"/>
         <MyNewComponent />
+        <MyCard content="Christophe" />
+        <MyCard content="Bence" />
       </header>
-
-
 
     </div>
   );
