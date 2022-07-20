@@ -28,7 +28,7 @@ function App() {
         <MyCard content="Christophe" />
         <MyCard content="Bence" />
         <MyCard content="Tartempion">
-          <p>Ici, je peux mettre tout le contenu de type "any".</p>
+          <p>Here I can put my content of type "any".</p>
           <MyNewComponent />
         </MyCard>
       </div>

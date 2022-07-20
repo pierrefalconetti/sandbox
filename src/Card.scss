@@ -1,11 +1,14 @@
 .card {
   background-color: white;
-  box-shadow: 3px 3px 5px rgba(256,0,0,.5);
-  color: black;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
   margin: 16px;
   min-width: 300px;
   padding: 16px;
-  text-align: left;
+
+  &-header {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
 .email {

@@ -10,20 +10,22 @@ export interface CardProps {
 function Card(props: CardProps) {
   return (
     <div className="card">
-      My name is {props.content}
+      <div className="card-header">{props.content}</div>
+      <div className="card-subheader">
       { props.email ? (
-          // Si l'adresse e-mail est fournie
+          // If the e-mail address is provided, display this template:
           <div className="email">
-            E-mail:
+            E-mail:&nbsp;
             <a href={`mailto: ${props.email}`}>
               {props.email}
             </a>
           </div>
         ) : (
-          // S'il n'y a pas d'adresse e-mail spécifiée
+          // If there is no e-mail address, use this other template:
           <></>
         )
       }
+      </div>
       <div className="card-content">
         {props.children}
       </div>
