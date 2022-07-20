@@ -3,11 +3,17 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
   margin: 16px;
   min-width: 300px;
-  padding: 16px;
+  padding: 8px 16px 16px;
 
   &-header {
     font-size: 24px;
     font-weight: bold;
+  }
+
+  &-content {
+    border: 1px dashed lightgrey;
+    margin-top: 8px;
+    padding: 4px;
   }
 }
 

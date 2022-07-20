@@ -1,9 +1,9 @@
-import logo from './logo.svg';
+import logo from '../../assets/images/logo.svg';
 import './App.scss';
 import React from 'react';
-import MyNewComponent from './xtrem-header';
+import MyNewComponent from '../XtremHeader/XtremHeader';
 import Popup from 'reactjs-popup';
-import MyCard from './Card';
+import MyCard from '../Card/Card';
 import 'reactjs-popup/dist/index.css';
 
 function App() {
