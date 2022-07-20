@@ -1,0 +1,17 @@
+// Some breakpoints
+
+$breakpoint_extrasmall_start:          320px; // Until 320px -> 1 column
+$breakpoint_small_start:                600px; // From 320px to 600px -> 2 columns
+$average_tablet:                        768px; // From 600px to 768px -> 4 columns
+$breakpoint_medium_start:               960px; // From 768px to 960px -> 6 columns
+$breakpoint_large_start:                1260px; // From 960px -> 12 columns
+$breakpoint_extralarge_start:          1921px;
+
+// Misc values
+
+$columns-12: calc(100% / 12); // = 8.33%
+$columns-6: calc(100% / 6);
+$columns-4: calc(100% / 4);
+$columns-3: calc(100% / 3);
+$columns-2: calc(100% / 2);
+$columns-1: calc(100%);

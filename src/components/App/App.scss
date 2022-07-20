@@ -1,3 +1,5 @@
+@import "../../assets/styles/variables";
+
 .App {
   background-color: lightgrey;
   display: flex;
@@ -22,6 +24,64 @@
     &-logo {
       animation: App-logo-spin infinite 20s linear;
     }
+  }
+}
+
+.grid {
+  
+  &-cols-responsive {
+    background: url(../../assets/images/grid-placeholder-column-1.png) top left;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $breakpoint_large_start;
+    padding: 0 5px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $breakpoint_extrasmall_start) {
+
+    &-cols-responsive {
+      background: url(../../assets/images/grid-placeholder-column-2.png) top left;
+      background-size: 100%;
+    }
+  }
+  
+  @media screen and (min-width: $breakpoint_small_start) {
+  
+    &-cols-responsive {
+      background: url(../../assets/images/grid-placeholder-column-4.png) top left;
+      background-size: 100%;
+    }
+  }
+  
+  @media screen and (min-width: $average_tablet) {
+  
+    &-cols-responsive {
+      background: url(../../assets/images/grid-placeholder-column-6.png) top left;
+      background-size: 100%;
+    }
+  }
+  
+  @media screen and (min-width: $breakpoint_medium_start) {
+  
+    &-cols-responsive {
+      background: url(../../assets/images/grid-placeholder-column-8.png) top left;
+      background-size: 100%;
+    }
+  }
+  
+  @media screen and (min-width: $breakpoint_large_start) {
+  
+    &-cols-responsive {
+      background: url(../../assets/images/grid-placeholder-column-12.png) top left;
+      background-size: 100%;
+    }
+  }
+
+  &-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

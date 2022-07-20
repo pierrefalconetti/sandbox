@@ -1,9 +1,10 @@
+@import "../../assets/styles/variables";
+
 .card {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
-  margin: 16px;
-  min-width: 300px;
-  padding: 8px 16px 16px;
+  padding: 8px 0 16px;
+  width: $columns-1;
 
   &-header {
     font-size: 24px;
@@ -14,6 +15,41 @@
     border: 1px dashed lightgrey;
     margin-top: 8px;
     padding: 4px;
+  }
+}
+
+@media screen and (min-width: $breakpoint_extrasmall_start) {
+
+  .card {
+    width: $columns-1;
+  }
+}
+
+@media screen and (min-width: $breakpoint_small_start) {
+
+  .card {
+    width: $columns-2;
+  }
+}
+
+@media screen and (min-width: $average_tablet) {
+
+  .card {
+    width: $columns-3;
+  }
+}
+
+@media screen and (min-width: $breakpoint_medium_start) {
+
+  .card {
+    width: $columns-4;
+  }
+}
+
+@media screen and (min-width: $breakpoint_large_start) {
+
+  .card {
+    width: calc($columns-12 * 3);
   }
 }
 

@@ -10,21 +10,21 @@ function App() {
   return (
     <div className="App">
 
-      <header className="App-header">
+      <header className="App-header grid-cols-responsive">
         <img src={logo} className="App-logo" alt="logo" />
         <div>
-          <h1>YARS: Yeat Another ReactJS Sandbox project</h1>
+          <h1>YARS: Yet Another ReactJS Sandbox project</h1>
           <Popup trigger={<button>Click me!</button>} position="right center">
             <div>Popup hidden content here!!</div>
           </Popup>
         </div>
       </header>
 
-      <div className="App-content">
+      <div className="App-content grid-cols-responsive grid-flex-wrap">
         <MyCard content="Benjamin" email="benjamin.dean@sage.com" />
         <MyCard content="Pierre" email="pierre.falconetti@sage.com" />
-        <MyCard content="Nicolas"/>
-        <MyCard content="David"/>
+        <MyCard content="Nicolas" />
+        <MyCard content="David" />
         <MyCard content="Christophe" />
         <MyCard content="Bence" />
         <MyCard content="Tartempion">
@@ -33,7 +33,7 @@ function App() {
         </MyCard>
       </div>
 
-      <footer>
+      <footer className="grid-cols-responsive">
         NB: Edit <code>src/App.js</code> and save to reload.
         <br/>
         <a
