@@ -20,22 +20,24 @@ function App() {
         </div>
       </header>
 
-      <div className="App-content grid-cols-responsive grid-flex-wrap">
-        <MyCard content="Benjamin" email="benjamin.dean@sage.com" />
-        <MyCard content="Pierre" email="pierre.falconetti@sage.com" />
-        <MyCard content="Nicolas" />
-        <MyCard content="David" />
-        <MyCard content="Christophe" />
-        <MyCard content="Bence" />
-        <MyCard content="Tartempion">
-          <p>Here I can put my content of type "any".</p>
-          <MyNewComponent />
-        </MyCard>
+      <div className="App-content grid-cols-responsive">
+        <div className="grid-flex-wrap">
+          <MyCard content="Benjamin" email="benjamin.dean@sage.com" />
+          <MyCard content="Pierre" email="pierre.falconetti@sage.com" />
+          <MyCard content="Nicolas" />
+          <MyCard content="David" />
+          <MyCard content="Christophe" />
+          <MyCard content="Bence" />
+          <MyCard content="Tartempion">
+            <p>Here I can put my content of type "any".</p>
+            <MyNewComponent />
+          </MyCard>
+        </div>
       </div>
 
       <footer className="grid-cols-responsive">
-        NB: Edit <code>src/App.js</code> and save to reload.
-        <br/>
+        Edit <code>src/App.js</code> and save to reload
+        &nbsp;|&nbsp;
         <a
           className="App-link"
           href="https://reactjs.org"
