@@ -12,10 +12,12 @@ function App() {
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <div>Hello World!</div>
-        <Popup trigger={<button>Lorem Ipsum is here</button>} position="right center">
-          <div>Popup content here!!</div>
-        </Popup>
+        <div>
+          <h1>YARS: Yeat Another ReactJS Sandbox project</h1>
+          <Popup trigger={<button>Click me!</button>} position="right center">
+            <div>Popup hidden content here!!</div>
+          </Popup>
+        </div>
       </header>
 
       <div className="App-content">
@@ -25,7 +27,6 @@ function App() {
         <MyCard content="David"/>
         <MyCard content="Christophe" />
         <MyCard content="Bence" />
-
         <MyCard content="Tartempion">
           <p>Ici, je peux mettre tout le contenu de type "any".</p>
           <MyNewComponent />
