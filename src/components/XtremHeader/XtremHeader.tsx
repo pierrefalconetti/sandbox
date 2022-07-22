@@ -4,7 +4,7 @@ export default function MyNewComponent() {
 
   return (
     <div>
-      Le contenu de mon composant ici, mais ceci est ma nouvelle branche.
+      This sentence is the content of my component "xtrem-header".
     </div>
   );
 }

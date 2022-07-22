@@ -64,6 +64,11 @@ The tsconfig.json file was added by using the command `tsc --init`, and the "jsx
 
 PS: in case of type declaration issues, see https://akashmittal.com/could-not-find-declaration-file-module/ for workarounds.
 
+## SASS
+
+SASS/SCSS has been installed through script `npm install node-sass --save`.
+And CSS files have been turned into SCSS files.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
