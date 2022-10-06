@@ -29,7 +29,10 @@ function App() {
           <MyCard content="Christophe" />
           <MyCard content="Bence" />
           <MyCard content="Tartempion">
-            <p>Here I can put my content of type "any".</p>
+            <p>
+              Here I can put my content of type "any".
+              This is an example of TypeScript use.
+            </p>
             <MyNewComponent />
           </MyCard>
         </div>
