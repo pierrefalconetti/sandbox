@@ -3,22 +3,24 @@ import './Card.scss';
 
 export interface CardProps {
   children?: any;
-  content: string;
-  email?: string;
+  icons?: string;
+  content?: string;
+  contact?: string;
 }
 
 function Card(props: CardProps) {
   return (
     <div className="card">
       <div className="card-container">
+        <div className="card-header">{props.icons}</div>
         <div className="card-header">{props.content}</div>
         <div className="card-subheader">
-        { props.email ? (
+        { props.contact ? (
             // If the e-mail address is provided, display this template:
-            <div className="email">
-              E-mail:&nbsp;
-              <a href={`mailto: ${props.email}`}>
-                {props.email}
+            <div className="contact">
+              Contact:&nbsp;
+              <a href={`mailto: ${props.contact}`}>
+                {props.contact}
               </a>
             </div>
           ) : (
