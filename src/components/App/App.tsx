@@ -138,6 +138,7 @@ function App() {
             <p>
               Here I can put my content of type "any".
               This is an example of TypeScript use.
+              Yet another edit...
             </p>
             <MyNewComponent />
           </MyCard>
