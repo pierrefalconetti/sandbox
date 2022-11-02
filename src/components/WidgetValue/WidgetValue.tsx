@@ -1,7 +1,6 @@
 import React from 'react';
 import './WidgetValue.scss';
 
-
 export interface Template {
   children?: any;
 

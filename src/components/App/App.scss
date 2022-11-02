@@ -40,7 +40,6 @@
   }
 }
 
-
 .sticky-inner {
   position: fixed;
   top: 0;
@@ -59,11 +58,11 @@
   margin: -30px 15px 0px 15px;
   color: #FFFFFF;
   text-decoration: none;
-}
 
-.right-links:hover {
-  margin: -30px 15px 0px 15px;
-  color: #FFFFFF;
+  &:hover {
+    margin: -30px 15px 0px 15px;
+    color: #FFFFFF;
+  }
 }
 
 .right-box {
@@ -80,7 +79,6 @@
   color: #FFFFFF;
 }
 
-
 .panelbox { 
   width: 48px;
   height: 64px;
@@ -90,17 +88,17 @@
   text-align: center;
   color: #000000;
   margin: 0px;
-}
 
-.panelbox:hover { 
-  width: 48px;
-  height: 64px;
-  background-color: #007E45;
-  position: relative;
-  padding: 0px;
-  text-align: center;
-  color: #FFFFFF;
-  margin: 0px;
+  &:hover { 
+    width: 48px;
+    height: 64px;
+    background-color: #007E45;
+    position: relative;
+    padding: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px;
+  }
 }
 
 .menuboxcontent {
@@ -109,10 +107,6 @@
   left: 50%; 
   transform: translate(-50%, -50%);
 }
-
-
-
-
 
 .grid {
   

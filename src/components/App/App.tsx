@@ -18,17 +18,22 @@ import { MdMoney } from "react-icons/md";
 import { MdPeopleAlt } from "react-icons/md";
 import { MdSettings } from "react-icons/md";
 
-
-
-const data = [
+const linesdata = [
+  { name: "Page A", uv: 4000, pv: 4000, amt: 2400 },
+  { name: "Page B", uv: 3000, pv: 1398, amt: 2210 },
+  { name: "Page C", uv: 2000, pv: 9800, amt: 2290 },
+  { name: "Page D", uv: 2780, pv: 3908, amt: 2000 },
+  { name: "Page E", uv: 1890, pv: 4800, amt: 2181 },
+  { name: "Page F", uv: 2390, pv: 3800, amt: 2500 },
+  { name: "Page G", uv: 3490, pv: 4300, amt: 2100 }
+];
+const piedata = [
   { name: "Group A", value: 400 },
   { name: "Group B", value: 300 },
   { name: "Group C", value: 300 },
   { name: "Group D", value: 200 }
 ];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
-
+const piecolors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 function App() {
   return (
@@ -63,63 +68,22 @@ function App() {
         <div className="grid-flex-wrap">
           <MyCard icons="jyfhgjf" content="" contact="benjamin.dean@sage.com" >$ 1 081 643<MyTemplate /></MyCard>
           <MyCard content="Christophe" contact="christophe.minost@sage.com" />
-          <MyCard content="Fabien"><LineChart width={500} height={300} data={[
-            {
-              name: "Page A",
-              uv: 4000,
-              pv: 4000,
-              amt: 2400
-            },
-            {
-              name: "Page B",
-              uv: 3000,
-              pv: 1398,
-              amt: 2210
-            },
-            {
-              name: "Page C",
-              uv: 2000,
-              pv: 9800,
-              amt: 2290
-            },
-            {
-              name: "Page D",
-              uv: 2780,
-              pv: 3908,
-              amt: 2000
-            },
-            {
-              name: "Page E",
-              uv: 1890,
-              pv: 4800,
-              amt: 2181
-            },
-            {
-              name: "Page F",
-              uv: 2390,
-              pv: 3800,
-              amt: 2500
-            },
-            {
-              name: "Page G",
-              uv: 3490,
-              pv: 4300,
-              amt: 2100
-            }
-          ]}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
-            <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-            <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
-          </LineChart></MyCard>
+          <MyCard content="Fabien">
+            <LineChart width={500} height={300} data={linesdata}>
+              <XAxis dataKey="name" />
+              <YAxis />
+              <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
+              <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+              <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
+            </LineChart>
+          </MyCard>
           <MyCard content="David" />
           <MyCard content="Pierre" />
           <MyCard content="Bence" />
           <MyCard content="Graph">
-            <PieChart width={800} height={400}>
+            <PieChart width={400} height={400}>
               <Pie
-                data={data}
+                data={piedata}
                 cx={120}
                 cy={200}
                 innerRadius={60}
@@ -128,8 +92,8 @@ function App() {
                 paddingAngle={5}
                 dataKey="value"
               >
-                {data.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                {piedata.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={piecolors[index % piecolors.length]} />
                 ))}
               </Pie>
             </PieChart>
@@ -143,15 +107,6 @@ function App() {
             <MyNewComponent />
           </MyCard>
         </div>
-      </div>
-
-      <div>
-
-
-
-
-
-
       </div>
 
       <footer className="grid-cols-responsive">

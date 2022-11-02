@@ -1,12 +1,10 @@
 @import "../../assets/styles/variables";
 
-
 .card {
   margin-bottom: 8px;
   margin-top: 8px;
   width: $columns-1;
   
-
   &-container {
     background-color: white;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
