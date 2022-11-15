@@ -41,22 +41,22 @@ function App() {
       <div className="sticky-inner" >
         <div className="producttitle">
           <img src={sagelogo} alt="Sage" height="46" width="" style={{ margin: "-26px 25px -2px 15px " }} />
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdHome /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdViewAgenda /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdShoppingCart /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdInventory /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdApartment /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdCreditCard /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdMoney /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdPeopleAlt /></div></div></a>
-          <a href=""><div className="panelbox"><div className="menuboxcontent"><MdSettings /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdHome /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdViewAgenda /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdShoppingCart /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdInventory /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdApartment /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdCreditCard /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdMoney /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdPeopleAlt /></div></div></a>
+          <a href="javascript:void(0);"><div className="panelbox"><div className="menuboxcontent"><MdSettings /></div></div></a>
           <div style={{ width: '48px', height: '2000px', backgroundColor: 'white' }}></div>
         </div>
         <div className="right-box">
-          <a href="" className="right-links" >Tenant version</a>
-          <a href="" ><img src={process.env.PUBLIC_URL + '/caretdown.png'} alt="Info" height="6" width="" style={{ margin: "-30px 25px 1px -8px " }} /></a>
-          <a href="" ><img src={process.env.PUBLIC_URL + '/info-2150938_960_720.webp'} alt="Info" height="20" width="20" style={{ marginBottom: "-5px" }} /></a>
-          <a href="" ><img src={process.env.PUBLIC_URL + '/avatar.png'} alt="Info" height="20" width="20" style={{ margin: "0px 25px -4px 25px" }} /></a>
+          <a href="javascript:void(0);" className="right-links" >Tenant version</a>
+          <a href="javascript:void(0);" ><img src={process.env.PUBLIC_URL + '/caretdown.png'} alt="Info" height="6" width="" style={{ margin: "-30px 25px 1px -8px " }} /></a>
+          <a href="javascript:void(0);" ><img src={process.env.PUBLIC_URL + '/info-2150938_960_720.webp'} alt="Info" height="20" width="20" style={{ marginBottom: "-5px" }} /></a>
+          <a href="javascript:void(0);" ><img src={process.env.PUBLIC_URL + '/avatar.png'} alt="Info" height="20" width="20" style={{ margin: "0px 25px -4px 25px" }} /></a>
         </div>
       </div>
       <header className="App-header grid-cols-responsive">
