@@ -21,6 +21,8 @@
   &-content {
     border: 1px dashed lightgrey;
     margin-top: 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
     padding: 0px;
   }
 }

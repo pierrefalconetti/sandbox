@@ -9,7 +9,7 @@ export interface Template {
 function WidgetValue(props: Template) {
   return (
     <div className="WidgetTemplate">
-      Hello World!
+      Sub card to be used inside another component.
     </div>
   )
 }
