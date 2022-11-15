@@ -66,9 +66,9 @@ function App() {
       </header>
       <div className="App-content grid-cols-responsive">
         <div className="grid-flex-wrap">
-          <MyCard icons="jyfhgjf" content="" contact="benjamin.dean@sage.com" >$ 1 081 643<MyTemplate /></MyCard>
-          <MyCard content="Christophe" contact="christophe.minost@sage.com" />
-          <MyCard content="Fabien">
+          <MyCard cardtitle="Benjamin" contact="benjamin.dean@sage.com" >$ 1 081 643<MyTemplate /></MyCard>
+          <MyCard cardtitle="Christophe" contact="christophe.minost@sage.com" />
+          <MyCard cardtitle="Fabien">
             <LineChart width={500} height={300} data={linesdata}>
               <XAxis dataKey="name" />
               <YAxis />
@@ -77,10 +77,10 @@ function App() {
               <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
             </LineChart>
           </MyCard>
-          <MyCard content="David" />
-          <MyCard content="Pierre" />
-          <MyCard content="Bence" />
-          <MyCard content="Graph">
+          <MyCard cardtitle="David" />
+          <MyCard cardtitle="Pierre" />
+          <MyCard cardtitle="Bence" />
+          <MyCard cardtitle="Graph">
             <PieChart width={400} height={400}>
               <Pie
                 data={piedata}
@@ -98,7 +98,7 @@ function App() {
               </Pie>
             </PieChart>
           </MyCard>
-          <MyCard content="Tartempion">
+          <MyCard cardtitle="random">
             <p>
               Here I can put my content of type "any".
               This is an example of TypeScript use.

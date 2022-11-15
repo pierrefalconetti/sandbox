@@ -4,7 +4,7 @@ import './Card.scss';
 export interface CardProps {
   children?: any;
   icons?: string;
-  content?: string;
+  cardtitle?: string;
   contact?: string;
 }
 
@@ -13,7 +13,7 @@ function Card(props: CardProps) {
     <div className="card">
       <div className="card-container">
         <div className="card-header">{props.icons}</div>
-        <div className="card-header">{props.content}</div>
+        <div className="card-header">{props.cardtitle}</div>
         <div className="card-subheader">
         { props.contact ? (
             // If the e-mail address is provided, display this template:
